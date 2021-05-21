@@ -2,12 +2,12 @@ package com.qa.garagetask;
 
 public class Car extends Vehicle {
 	
-	String color;
-	Boolean isConvertible;
+	private String color;
+	private Boolean isConvertible;
 	
 
-	public Car(String make, String model, int year, String color, Boolean isConvertible) {
-		super(make, model, year);
+	public Car(String make, String model, int year, String color, Boolean isConvertible, Double price) {
+		super(make, model, year, price);
 		this.color = color;
 		this.isConvertible = isConvertible;
 		
